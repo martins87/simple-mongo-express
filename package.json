@@ -1,0 +1,15 @@
+{
+  "name": "simplemongo",
+  "version": "1.0.0",
+  "description": "Simple MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Martins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.16"
+  }
+}
