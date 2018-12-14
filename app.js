@@ -6,7 +6,7 @@ const app = express()
 const port = 3000
 
 // mongo db route
-const dbRoute = 'mongodb://localhost:27017/people'
+const dbRoute = 'mongodb://localhost:27017/new_db'
 
 mongoose.connect(
     dbRoute,
@@ -27,6 +27,12 @@ app.get('/', function(req, res) {
 
 app.get('/users', function(req, res) {
     Users.find({}, function(req, users) {
+        res.send(users)
+    })
+})
+
+app.get('/users/:id', function(req, res) {
+    Users.find({_id:req.params.id}, function(req, users) {
         res.send(users)
     })
 })
