@@ -8,8 +8,6 @@ const port = 3000
 // mongo db route
 const dbRoute = 'mongodb://localhost:27017/people'
 
-// test
-
 mongoose.connect(
     dbRoute,
     {useNewUrlParser: true}
