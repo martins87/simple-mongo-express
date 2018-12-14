@@ -6,7 +6,7 @@ const app = express()
 const port = 3000
 
 // mongo db route
-const dbRoute = 'mongodb://localhost:27017/new_db'
+const dbRoute = 'mongodb://localhost:27017/people'
 
 mongoose.connect(
     dbRoute,
