@@ -21,6 +21,15 @@ db.once('open', () => console.log('Houston, we are connected to the local databa
 // checks for connection error
 db.on('error', console.error.bind(console, 'MongoDB connection error'))
 
+// inserts the GOAT
+let goat = new Users({name: 'Lionel Messi'})
+goat.save((error, player) => {
+    if(error) {
+        return console.error(error)
+    }
+    console.log(player.name + ' saved to players collection')
+})
+
 app.get('/', function(req, res) {
     res.send('Hello, World!')
 })
