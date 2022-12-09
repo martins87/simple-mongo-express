@@ -9,7 +9,7 @@
   "author": "Daniel Martins",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "mongoose": "^5.3.16"
   }
 }
